@@ -53,7 +53,7 @@ export default function AboutMe() {
 
         {/* Texto */}
         <p className="text-base sm:text-xl md:text-2xl text-neutral-200 leading-relaxed max-w-3xl mx-auto mb-6 sm:mb-12">
-        Caio Padeiro, especialista em nutrição esportiva e performance atlética, comprometido com a busca pela excelência.
+        Transforme seu físico com ciência aplicada ao treino. Esqueça achismo, fórmulas mágicas e métodos populares que não entregam resultado.
         </p>
         <p 
           className="text-base sm:text-xl md:text-2xl leading-relaxed max-w-3xl mx-auto mb-6 sm:mb-12 font-semibold"
@@ -75,7 +75,7 @@ export default function AboutMe() {
 
         {/* Título Links */}
         <h2 className="text-2xl sm:text-4xl md:text-5xl font-semibold text-white text-center">
-          Links que você pode acessar!
+        Escolha seu próximo passo
         </h2>
       </div>
 
