@@ -22,7 +22,7 @@ export default function LinksSection() {
     };
   }, []);
 
-  const linkDireita = "https://api.whatsapp.com/send?phone=551331502758&text=Fala%20Caio!%20Tenho%20interesse%20na%20sessão%20de%20diagnóstico%20individual.";
+  const linkDireita = "https://tally.so/r/0QQQJj";
   const linkYouTube = "https://www.youtube.com/@CaioPadeiro";
   const linkInstagram = "https://www.instagram.com/caiopadeiroyt/";
   const linkTikTok = "https://www.tiktok.com/@caiopadeiroyt";
@@ -91,7 +91,7 @@ export default function LinksSection() {
             
             <div  className="flex flex-col items-end gap-1.5 sm:gap-2 relative z-10 flex-1 min-w-0 ml-auto min-w-[120px]" >
               <span  className="text-white text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold uppercase text-right leading-tight">
-               DIAGNÓSTICO<br />INDIVIDUAL 
+               TIME<br />PADEIRO
               </span>
               <span className="text-gray-400 text-sm sm:text-base md:text-lg lg:text-xl font-semibold uppercase text-right leading-tight">
               FORMULÁRIO 
