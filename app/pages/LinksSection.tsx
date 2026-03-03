@@ -1,5 +1,5 @@
 "use client";
-import { FaYoutube, FaInstagram, FaWhatsapp, FaTiktok, FaLock } from "react-icons/fa";
+import { FaYoutube, FaInstagram, FaWhatsapp, FaTiktok } from "react-icons/fa";
 import { useEffect, useState } from "react";
 import Image from "next/image";
 
@@ -22,6 +22,7 @@ export default function LinksSection() {
     };
   }, []);
 
+  const linkAcademy = "https://chat.whatsapp.com/JbPTqVZOYifHVdIYwdMGHi?mode=gi_t";
   const linkDireita = "https://tally.so/r/0QQQJj";
   const linkYouTube = "https://www.youtube.com/@CaioPadeiro";
   const linkInstagram = "https://www.instagram.com/caiopadeiroyt/";
@@ -40,9 +41,12 @@ export default function LinksSection() {
       <div className="relative z-10 max-w-6xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
           
-          {/* Bloco Esquerda - BORDAS RESTAURADAS */}
-          <div
-            className={`group relative flex flex-row items-center justify-between gap-3 sm:gap-6 rounded-2xl border border-red-600 p-4 sm:p-8 min-h-40 sm:min-h-48 shadow-2xl transition overflow-hidden fade-in-up cursor-default ${visibleItems.leftBlock ? "visible" : ""}`}
+          {/* Bloco Esquerda - JC Academy / Grupo VIP WhatsApp */}
+          <a
+            href={linkAcademy}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={`group relative flex flex-row items-center justify-between gap-3 sm:gap-6 rounded-2xl border border-red-600 p-4 sm:p-8 min-h-40 sm:min-h-48 shadow-2xl transition hover:scale-[1.01] overflow-hidden fade-in-up ${visibleItems.leftBlock ? "visible" : ""}`}
             style={{
               backgroundImage: 'url(https://blog.casadofitness.com.br/wp-content/uploads/2023/12/311.png)',
               backgroundSize: 'cover',
@@ -58,18 +62,17 @@ export default function LinksSection() {
               <span className="text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold uppercase text-right leading-tight">
                 JC<br />ACADEMY
               </span>
-              <button className="bg-red-600 text-white px-3 sm:px-4 py-1.5 sm:py-2 rounded-lg text-sm sm:text-base md:text-base font-semibold uppercase transition hover:bg-red-500">
+              <span className="bg-red-600 text-white px-3 sm:px-4 py-1.5 sm:py-2 rounded-lg text-sm sm:text-base md:text-base font-semibold uppercase inline-block transition group-hover:bg-red-500">
                 Saiba mais
-              </button>
-            </div>
-            {/* Overlay escuro na parte inferior com cadeado e "em breve" */}
-            <div className="absolute bottom-0 left-0 right-0 bg-black/60 backdrop-blur-sm z-50 pointer-events-none flex items-center justify-center gap-2 sm:gap-3 py-2 sm:py-3">
-              <FaLock className="text-red-600 text-lg sm:text-xl md:text-2xl opacity-90" />
-              <span className="text-white text-sm sm:text-base md:text-lg font-semibold uppercase opacity-90">
-                Em breve!
               </span>
             </div>
-          </div>
+            {/* Overlay na parte inferior com "GRUPO VIP" */}
+            <div className="absolute bottom-0 left-0 right-0 bg-black/60 backdrop-blur-sm z-50 pointer-events-none flex items-center justify-center py-2 sm:py-3">
+              <span className="text-white text-sm sm:text-base md:text-lg font-semibold uppercase opacity-90">
+                GRUPO VIP
+              </span>
+            </div>
+          </a>
 
           {/* Bloco Direita - BORDAS RESTAURADAS */}
           <a
