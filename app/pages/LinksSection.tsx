@@ -22,7 +22,7 @@ export default function LinksSection() {
     };
   }, []);
 
-  const linkAcademy = "https://chat.whatsapp.com/JbPTqVZOYifHVdIYwdMGHi?mode=gi_t";
+  const linkAcademy = "https://www.academyjc.com.br";
   const linkDireita = "https://tally.so/r/0QQQJj";
   const linkYouTube = "https://www.youtube.com/@CaioPadeiro";
   const linkInstagram = "https://www.instagram.com/caiopadeiroyt/";
@@ -41,7 +41,7 @@ export default function LinksSection() {
       <div className="relative z-10 max-w-6xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
           
-          {/* Bloco Esquerda - JC Academy / Grupo VIP WhatsApp */}
+          {/* Bloco Esquerda - JC Academy */}
           <a
             href={linkAcademy}
             target="_blank"
@@ -64,12 +64,6 @@ export default function LinksSection() {
               </span>
               <span className="bg-red-600 text-white px-3 sm:px-4 py-1.5 sm:py-2 rounded-lg text-sm sm:text-base md:text-base font-semibold uppercase inline-block transition group-hover:bg-red-500">
                 Saiba mais
-              </span>
-            </div>
-            {/* Overlay na parte inferior com "GRUPO VIP" */}
-            <div className="absolute bottom-0 left-0 right-0 bg-black/60 backdrop-blur-sm z-50 pointer-events-none flex items-center justify-center py-2 sm:py-3">
-              <span className="text-white text-sm sm:text-base md:text-lg font-semibold uppercase opacity-90">
-                GRUPO VIP
               </span>
             </div>
           </a>
